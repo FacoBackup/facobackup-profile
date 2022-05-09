@@ -99,7 +99,7 @@ export default function Home() {
                             <p>Experience with <b>Github</b> and <b>GitLab</b>.</p>
                         </div>
                         <div className={styles.contentRow} style={{display: 'grid'}}>
-                            <p>Experience with <b>regEX</b> checkout my <a target={'_blank'}
+                            <p>Experience with <b>regEX</b> checkout my <a rel="noreferrer" target={'_blank'}
                                 href={'https://github.com/fabric-ui/markdown'}>Markdown processor</a>.</p>
                         </div>
                     </section>
