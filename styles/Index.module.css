@@ -1,0 +1,50 @@
+.wrapper {
+    color: var(--fabric-color-secondary);
+    overflow-y: auto;
+    max-height: 100vh;
+    padding: 0 25% 10vh;
+}
+
+.contentRow {
+    background: var(--fabric-background-primary);
+    border: var(--fabric-border-primary) 1px solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    gap: 4px;
+    padding: 16px 32px;
+}
+
+.image {
+    background: var(--fabric-border-primary);
+    border-radius: 5px;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.content {
+    display: grid;
+    gap: 8px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.section {
+    display: grid;
+    height: fit-content;
+    justify-content: flex-end;
+    justify-items: flex-end;
+}
+
+.header {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+    background: transparent;
+    height: 25vh;
+    overflow: hidden;
+}
