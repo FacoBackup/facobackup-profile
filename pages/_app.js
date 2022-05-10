@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import {Button, Fabric, ToolTip} from "@f-ui/core";
 import styles from '../styles/App.module.css'
-import {useState} from "react";
+import "@fontsource/roboto";
 
 function MyApp({Component, pageProps}) {
     return (

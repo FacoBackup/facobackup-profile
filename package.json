@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@f-ui/core": "0.1.51-alpha",
+    "@f-ui/core": "0.1.53-alpha",
+    "@f-ui/markdown": "^0.1.2-alpha",
+    "@fontsource/roboto": "^4.5.5",
     "axios": "^0.24.0",
     "next": "12.0.1",
     "prop-types": "^15.7.2",

@@ -1,8 +1,12 @@
 .wrapper {
     color: var(--fabric-color-secondary);
     overflow-y: auto;
+    overflow-x: hidden;
     max-height: 100vh;
-    padding: 0 25% 10vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .contentRow {
@@ -21,6 +25,7 @@
     background: var(--fabric-border-primary);
     border-radius: 5px;
     max-height: 100%;
+    max-width: 85px;
     overflow: hidden;
 }
 
@@ -39,12 +44,59 @@
 }
 
 .header {
-    display: flex;
-    gap: 4px;
+    background: var(--fabric-background-primary);
+
+    display: grid;
+
     align-items: center;
-    justify-content: space-between;
-    padding: 4px;
-    background: transparent;
-    height: 25vh;
+    justify-content: center;
+    justify-items: center;
+
+
+    gap: 4px;
+
+    padding: 4px 4px 16px;
+    min-height: 20vh;
+    height: 20vh;
     overflow: hidden;
+}
+
+.cell {
+    height: 150px;
+    min-width: 50%;
+
+    width: fit-content;
+    overflow: hidden;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+
+    color: var(--fabric-color-tertiary);
+    text-align: center;
+    font-weight: 525;
+    font-size: .85rem;
+
+    max-height: 15vh;
+    max-width: 20vw;
+}
+
+.header1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.header2 {
+    font-size: .85rem;
+    font-weight: 500;
+    margin: 0;
+
+
+}
+
+.tab {
+
+    padding: 16px;
+
+    display: grid;
 }
