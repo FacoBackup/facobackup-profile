@@ -49,7 +49,7 @@ export default function Home() {
                     {readMe.length > 0 ? <MD readMe={readMe}/> : null}
                 </Tab>
                 <Tab label={'Frontend'} group={'Myself'} className={styles.tab}>
-                    <Timeline spineGap={'4px'} cardSize={'150px'} styles={{width: '100%'}}>
+                    <Timeline spineGap={'4px'} cardSize={'70px'} styles={{width: '100%'}}>
                         <TimelineCell className={styles.cell}>
                             <img alt={'js'} className={styles.image} src={'js.png'}/>
                             <p>2+ years in <b>Javascript</b> development</p>
@@ -69,7 +69,7 @@ export default function Home() {
                     </Timeline>
                 </Tab>
                 <Tab label={'Backend'} group={'Myself'} className={styles.tab}>
-                    <Timeline spineGap={'4px'} cardSize={'150px'} styles={{width: '100%'}}>
+                    <Timeline spineGap={'4px'} cardSize={'70px'} styles={{width: '100%'}}>
                         <TimelineCell className={styles.cell}>
                             <img alt={'js'} className={styles.image} src={'py.png'}/>
                             <p>Python and frameworks like Django and Flask</p>
@@ -87,7 +87,7 @@ export default function Home() {
                     </Timeline>
                 </Tab>
                 <Tab label={'Graphics'} group={'Myself'} className={styles.tab}>
-                    <Timeline spineGap={'4px'} cardSize={'150px'} styles={{width: '100%'}}>
+                    <Timeline spineGap={'4px'} cardSize={'70px'} styles={{width: '100%'}}>
                         <TimelineCell className={styles.cell}>
                             <img alt={'js'} className={styles.image} src={'opengl.png'}/>
                             <p>OpenGL.</p>
@@ -105,7 +105,7 @@ export default function Home() {
                     </Timeline>
                 </Tab>
                 <Tab label={'Misc'} group={'Myself'} className={styles.tab}>
-                    <Timeline spineGap={'4px'} cardSize={'150px'} styles={{width: '100%'}}>
+                    <Timeline spineGap={'4px'} cardSize={'70px'} styles={{width: '100%'}}>
                         <TimelineCell className={styles.cell}>
                             <p>Shell scripts and Powershell for automation and data collection.</p>
                         </TimelineCell>
@@ -125,7 +125,7 @@ export default function Home() {
                 </Tab>
 
                 <Tab label={'Learning'} group={'Myself'} className={styles.tab}>
-                    <Timeline spineGap={'4px'} cardSize={'150px'} styles={{width: '100%'}}>
+                    <Timeline spineGap={'4px'} cardSize={'70px'} styles={{width: '100%'}}>
                         <TimelineCell className={styles.cell}>
                             <p>WebAssembly.</p>
                         </TimelineCell>
@@ -139,17 +139,6 @@ export default function Home() {
                             <p>Agile project management methods.</p>
                         </TimelineCell>
                     </Timeline>
-                </Tab>
-                <Tab label={'Projects'} className={styles.tab}>
-                    <h3>Fabric-UI</h3>
-
-                    <div className={styles.contentRow}>
-                        <p><b>Core</b>: Essential UI components for React.</p>
-                    </div>
-                    <div className={styles.contentRow}>
-                        <p><b>Markdown</b>: Markdown processor for React.</p>
-                    </div>
-
                 </Tab>
             </Tabs>
 
