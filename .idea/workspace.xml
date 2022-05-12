@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="68824e3f-e620-4ee5-bd9b-8c59ed04fe44" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Index.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -42,7 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -54,11 +56,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gustavo.roque\Documents\GitHub\facobackup-profile\templates" />
       <recent name="C:\Users\gustavo.roque\Documents\GitHub\pj-engine-demo\public" />
       <recent name="C:\Users\gustavo.roque\Documents\GitHub\pj-engine-demo\md" />
       <recent name="C:\Users\gustavo.roque\Documents\GitHub\pj-engine-demo\public\icons" />
       <recent name="C:\Users\gustavo.roque\Documents\GitHub\pj-engine-demo\pages" />
-      <recent name="\\wsl.localhost\Ubuntu\home\roque\projects\engine\components\styles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\gustavo.roque\Documents\GitHub\pj-engine-demo\public" />
@@ -78,6 +80,7 @@
       <workItem from="1640085273651" duration="7607000" />
       <workItem from="1652100190249" duration="4995000" />
       <workItem from="1652180249025" duration="13467000" />
+      <workItem from="1652354056948" duration="2825000" />
     </task>
     <servers />
   </component>

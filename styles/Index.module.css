@@ -59,6 +59,8 @@
     min-height: 20vh;
     height: 20vh;
     overflow: hidden;
+
+    position: relative;
 }
 
 .cell {
@@ -99,4 +101,27 @@
     padding: 16px;
 
     display: grid;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+
+    gap: 4px;
+    position: absolute;
+
+    left: 4px;
+    /*transform: translate(-50%, -50%);*/
+    top: 4px;
+}
+
+.button{
+
+    min-width: 35px;
+    height: 35px;
+    padding: 2px !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
