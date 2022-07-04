@@ -1,16 +1,13 @@
 import '../styles/globals.css'
-import {Button, Fabric, ToolTip} from "@f-ui/core";
 import styles from '../styles/App.module.css'
-import "@fontsource/roboto";
 import {useState} from "react";
+import {ThemeProvider} from "@f-ui/core";
 
-function MyApp({Component, pageProps}) {
+export default function MyApp({Component, pageProps}) {
     const [dark, setDark] = useState(true)
     return (
-        <Fabric theme={dark ? 'dark' : 'light'} className={styles.wrapper}>
+        <ThemeProvider theme={dark ? 'dark' : 'light'} className={styles.wrapper} language={"pt"}>
             <Component {...pageProps} dark={dark} setDark={setDark} />
-        </Fabric>
+        </ThemeProvider>
     )
 }
-
-export default MyApp

@@ -11,28 +11,19 @@ import {
     Button,
     Dropdown,
     DropdownOptions,
-    DropdownOption
+    DropdownOption, Icon
 } from "@f-ui/core";
 import {MarkdownMinimal, useMarkdown} from "@f-ui/markdown";
 import EN from "../templates/EN";
 import PT from "../templates/PT";
 import PropTypes from "prop-types";
-
-function MD({readMe}) {
-    const hook = useMarkdown(readMe)
-
-    return (
-        <div style={{padding: '0 15%'}}>
-            <MarkdownMinimal hook={hook}/>
-        </div>
-    )
-}
+import useLocale from "../hooks/useLocale";
+import Document from "../components/Document";
 
 export default function Home({dark, setDark}) {
     const [open, setOpen] = useState(0)
-    const [locale, setLocale] = useState(EN)
+    const [locale, lang, setLang] = useLocale()
 
-    const [lang, setLang] = useState('en')
     const [readMe, setReadMe] = useState('')
     useEffect(() => {
         fetch('https://raw.githubusercontent.com/facobackup/facobackup/main/README.md')
@@ -42,17 +33,10 @@ export default function Home({dark, setDark}) {
             .then(json => {
                 setReadMe(json)
             })
-        console.log(localStorage.getItem('dark'))
         setDark(localStorage.getItem('dark') === '1')
         setLang(localStorage.getItem('locale'))
     }, [])
-    useEffect(() => {
-        if (lang === 'en')
-            setLocale(EN)
-        else
-            setLocale(PT)
-        localStorage.setItem('locale', lang)
-    }, [lang])
+
 
     return (
         <div className={styles.wrapper}>
@@ -60,9 +44,12 @@ export default function Home({dark, setDark}) {
                 <title>Gustavo Roque | Web DEV</title>
             </Head>
             <div className={styles.header}>
-                <img alt={'js'} className={styles.image} style={{borderRadius: '50%', maxWidth: '125px'}}
-                     src={'https://avatars.githubusercontent.com/facobackup'}/>
-
+                <img
+                    alt={'js'}
+                     className={styles.image}
+                     style={{borderRadius: '50%', maxWidth: '125px'}}
+                     src={'https://avatars.githubusercontent.com/facobackup'}
+                />
                 <h1 className={styles.header1}>
                     Gustavo Micael Barbosa Roque
                 </h1>
@@ -70,19 +57,17 @@ export default function Home({dark, setDark}) {
                     {locale.HEADER}
                 </h3>
                 <div className={styles.options}>
-                    <Dropdown className={styles.button} variant={"outlined"}>
-                        <span className={'material-icons-round'} style={{fontSize: '1.1rem'}}>language</span>
+                    <Dropdown className={styles.button} variant={"outlined"} hideArrow={true}>
+                        <Icon styles={{fontSize: '1.1rem'}}>language</Icon>
                         <DropdownOptions>
                             <DropdownOption option={{
                                 label: 'English',
-                                icon: lang === 'en' ?  <span className={'material-icons-round'}
-                                                             style={{fontSize: '1.1rem'}}>check</span> : null,
+                                icon: lang === 'en' ?  <Icon styles={{fontSize: '1.1rem'}}>check</Icon> : null,
                                 onClick: () => setLang('en'),
                             }}/>
                             <DropdownOption option={{
                                 label: 'Português',
-                                icon: lang === 'pt' ?  <span className={'material-icons-round'}
-                                                             style={{fontSize: '1.1rem'}}>check</span> : null,
+                                icon: lang === 'pt' ?  <Icon styles={{fontSize: '1.1rem'}}>check</Icon> : null,
                                 onClick: () => setLang('pt'),
                             }}/>
 
@@ -96,14 +81,13 @@ export default function Home({dark, setDark}) {
                                 localStorage.setItem('dark', '1')
                             setDark(!dark)
                         }} className={styles.button} variant={"outlined"}>
-                        <span className={'material-icons-round'}
-                              style={{fontSize: '1.1rem'}}>{!dark ? 'light_mode' : 'dark_mode'}</span>
+                        <Icon styles={{fontSize: '1.1rem'}}>{!dark ? 'light_mode' : 'dark_mode'}</Icon>
                     </Button>
                 </div>
             </div>
             <Tabs open={open} setOpen={setOpen} headerStyles={{justifyContent: 'center'}}>
                 <Tab label={'Overview'} className={styles.tab}>
-                    {readMe.length > 0 ? <MD readMe={readMe}/> : null}
+                    {readMe.length > 0 ? <Document text={readMe}/> : null}
                 </Tab>
                 <Tab label={locale[1]} className={styles.tab}>
                     <Timeline spineGap={'24px'} cardSize={'85px'} styles={{width: '100%'}}>
@@ -164,9 +148,6 @@ export default function Home({dark, setDark}) {
                         </TimelineCell>
                     </Timeline>
                 </Tab>
-
-
-
                 <Tab label={locale[2]} className={styles.tab}>
                     <Timeline spineGap={'4px'} cardSize={'70px'} styles={{width: '100%'}}>
                         <TimelineCell className={styles.cell}>

@@ -1,5 +1,5 @@
 .wrapper {
-    color: var(--fabric-color-secondary);
+    background: var(--fabric-background-tertiary);
     overflow-y: auto;
     overflow-x: hidden;
     max-height: 100vh;
@@ -7,10 +7,10 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    color: var(--fabric-color-secondary);
 }
 
 .contentRow {
-    background: var(--fabric-background-primary);
     border: var(--fabric-border-primary) 1px solid;
     border-radius: 5px;
     display: flex;
