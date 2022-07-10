@@ -23,8 +23,11 @@ export default {
     GL: <p>Conhecimento e experiência com openGL e WebGL</p>,
 
 
-    0: 'Geral',
-    1: 'Conhecimento e experiências',
-
-    2: 'Aprendendo',
+    PROFILE: "Eu",
+    ABOUT: "Sobre mim",
+    EXPERIENCES: "Experiências",
+    PROJECTS: "Meus projetos",
+    CONTACT: "Contato",
+    THEME: "Tema",
+    LANG: "Localização"
 }

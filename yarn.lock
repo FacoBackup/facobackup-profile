@@ -73,10 +73,10 @@
     react-dom "^18.1.0"
     react-imask "^6.4.2"
 
-"@f-ui/markdown@^0.2.1-alpha":
-  version "0.2.1-alpha"
-  resolved "https://registry.yarnpkg.com/@f-ui/markdown/-/markdown-0.2.1-alpha.tgz#8ee180ee65c4707345167ebd29864d738be7d2c4"
-  integrity sha512-civNI/0AXj+1p6LH+oq2QBsAIMXQ441p+ZOFqsL/g6ncryZ9yZVt7bOZIsk5HJ9shFbl113b23OJD/sdExmtkw==
+"@f-ui/markdown@^0.2.11-alpha":
+  version "0.2.11-alpha"
+  resolved "https://registry.yarnpkg.com/@f-ui/markdown/-/markdown-0.2.11-alpha.tgz#1cf7d5342ce6002d8ff8075596bf07670fb436f1"
+  integrity sha512-7p7G/MDFhZ9IrsTEdH7jl8CqDUSqFTRqYtkBnBd0E+IGYSWd5lqR9Yxpsn8bUUYzdGb6VTC9W3MS4HDv4GpXsw==
   dependencies:
     "@f-ui/core" "^0.2.18-alpha"
     prop-types "^15.7.2"

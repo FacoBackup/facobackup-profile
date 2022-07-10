@@ -1,127 +1,129 @@
-.wrapper {
-    background: var(--fabric-background-tertiary);
-    overflow-y: auto;
-    overflow-x: hidden;
-    max-height: 100vh;
+.wrapper{
+    padding: 10vh 10%;
+    overflow: visible;
+    height: 100%;
+    display: grid;
 
+
+
+    grid-template-rows: repeat(4, 100%);
+    gap: 10vh;
+}
+.section{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.profile{
+    height: 100%;
+    padding: 8px 10%;
+    display: grid;
+    justify-items: center;
+    /*justify-content: center;*/
+    align-content: center;
+}
+.profile > h2{
+    margin-bottom: 16px;
+    width: 75%;
+    text-align: center;
+    border-bottom: var(--fabric-border-primary) 2px solid;
+}
+.image{
+    height: 250px;
+    border-radius: 5px;
+}
+.group{
+    width: 100%;
+    display: flex;
+}
+.group > *{
+    padding: 0 2%;
+    width: 100%;
+}
+.cells{
+    display: flex;
+    flex-flow: wrap;
+    align-content: flex-start;
+    gap: 4px;
+}
+.cells > *{
+    background: var(--fabric-border-primary);
+    width: fit-content;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: .85rem;
+}
+.cells > *[data-highlight="-"]{
+    background: var(--fabric-accent-color);
+    color: white;
+    font-weight: 550;
+}
+.cellDivider{
+    font-size: 1rem;
+    background: transparent;
+    width: 100%;
+    border-bottom: var(--fabric-border-primary) 1px solid;
+    margin-top: 16px;
+    font-weight: 550;
+}
+
+.rangeWrapper{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: .85rem;
+}
+.rangeWrapper > label{
+
+    min-width: 10vw;
+}
+.rangeWrapper > input{
+    width: 100%;
+    height: 35px;
+}
+
+.projectWrapper{
+    width: 100%;
+    background: var(--fabric-background-primary);
+    padding: 16px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    color: var(--fabric-color-secondary);
-}
-
-.contentRow {
-    border: var(--fabric-border-primary) 1px solid;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 10vh;
     gap: 4px;
-    padding: 16px 32px;
 }
-
-.image {
-    background: var(--fabric-border-primary);
-    border-radius: 5px;
-    max-height: 100%;
-    max-width: 85px;
-    overflow: hidden;
-}
-
-.content {
-    display: grid;
+.projectFooter{
+    display: flex;
     gap: 8px;
-    width: 100%;
-    overflow: hidden;
-}
-
-.section {
-    display: grid;
-    height: fit-content;
-    justify-content: flex-end;
-    justify-items: flex-end;
-}
-
-.header {
-    background: var(--fabric-background-primary);
-
-    display: grid;
-
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
-    justify-items: center;
 
+    margin-top: 16px;
 
-    gap: 4px;
-
-    padding: 4px 4px 16px;
-    min-height: 20vh;
-    height: 20vh;
-    overflow: hidden;
-
-    position: relative;
 }
+.projectFooter > a{
+    font-size: .7rem;
+    font-weight: 550;
 
-.cell {
-    height: 150px;
-    min-width: 50%;
-
+    border-radius: 5px;
     width: fit-content;
-    overflow: hidden;
-    display: grid;
-    justify-items: center;
-    align-content: center;
-
-    color: var(--fabric-color-tertiary);
-    text-align: center;
-    font-weight: 525;
-    font-size: .85rem;
-
-    max-height: 15vh;
-    max-width: 20vw;
+    text-decoration: underline;
 }
-
-.header1 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 0;
-}
-
-.header2 {
-    font-size: .85rem;
-    font-weight: 500;
-    margin: 0;
-
-
-}
-
-.tab {
-
-    padding: 16px;
-
-    display: grid;
-}
-
-.options{
+.projectsRow{
     display: flex;
-    align-items: center;
+    gap: 8px;
 
-    gap: 4px;
-    position: absolute;
-
-    left: 4px;
-    /*transform: translate(-50%, -50%);*/
-    top: 4px;
 }
-
 .button{
+    font-weight: 550;
 
-    min-width: 35px;
-    height: 35px;
-    padding: 2px !important;
+    padding: 4px 8px !important;
+    width: fit-content;
+    font-size: .7rem !important;
+    height: 20px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 }

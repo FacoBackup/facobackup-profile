@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@f-ui/core": "0.2.23-alpha",
-    "@f-ui/markdown": "^0.2.1-alpha",
+    "@f-ui/markdown": "^0.2.11-alpha",
     "axios": "^0.24.0",
     "next": "12.2.0",
     "prop-types": "^15.7.2",
