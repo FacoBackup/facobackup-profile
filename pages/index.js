@@ -29,17 +29,9 @@ import IDS from "../public/IDS";
 export default function Home({dark, setDark}) {
     const [onElement, setOnElement] = useState(0)
     const [locale, lang, setLang] = useLocale()
-    const [readMe, setReadMe] = useState('')
 
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/facobackup/facobackup/main/README.md')
-            .then(res => {
-                return res.text()
-            })
-            .then(json => {
-                setReadMe(json)
-            })
-        setDark(localStorage.getItem('dark') === '1')
+        setDark(localStorage.getItem('dark') === '1' || !localStorage.getItem("dark"))
         setLang(localStorage.getItem('locale'))
     }, [])
 
