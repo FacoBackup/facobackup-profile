@@ -68,7 +68,7 @@ export default function Profile({setOn}) {
                 <div
                     style={{display: "flex", alignItems: "center", gap: "8px", cursor: "pointer"}}
                     onClick={() => {
-                        navigator.clipboard.write("(61)-99871-1025")
+                        navigator.clipboard.writeText("(61) 99871-1025").catch()
                         alert.pushAlert("Copiado", "info")
                     }}
                 >
@@ -80,7 +80,7 @@ export default function Profile({setOn}) {
                 <div
                     style={{display: "flex", alignItems: "center", gap: "8px", cursor: "pointer"}}
                     onClick={() => {
-                        navigator.clipboard.write("gustavomicaelbarbosa@gmail.com")
+                        navigator.clipboard.writeText("gustavomicaelbarbosa@gmail.com").catch()
                         alert.pushAlert("Copiado", "info")
                     }}
                 >
