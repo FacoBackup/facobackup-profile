@@ -3,17 +3,9 @@ import IDS from "../public/IDS";
 import styles from "../styles/Index.module.css";
 
 export default function About({setOn}) {
-    const ref=useRef()
-    useEffect(() => {
-        const obs = new IntersectionObserver((e) => {
-            if(e[0].isIntersecting)
-                setOn()
-        })
-        obs.observe(ref.current)
-        return () => obs.disconnect()
-    }, [])
+
     return (
-        <div className={styles.profile} ref={ref}>
+        <div className={styles.profile} data-listen={"-"} id={"2"}>
             <h2>Quem sou eu ?</h2>
             <div className={styles.group}>
                 <div>

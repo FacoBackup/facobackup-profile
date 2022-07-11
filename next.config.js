@@ -1,3 +1,7 @@
 module.exports = {
-  reactStrictMode: false
+  reactStrictMode: false,
+  images: {
+    domains: ['github.com'],
+    dangerouslyAllowSVG: true
+  }
 }

@@ -11,11 +11,11 @@ import {
     Button,
     Dropdown,
     DropdownOptions,
-    DropdownOption, Icon
+    DropdownOption, Icon, useAlert
 } from "@f-ui/core";
 import {MarkdownMinimal, useMarkdown} from "@f-ui/markdown";
-import EN from "../templates/EN";
-import PT from "../templates/PT";
+import EN from "../public/EN";
+import PT from "../public/PT";
 import PropTypes from "prop-types";
 import useLocale from "../hooks/useLocale";
 import Document from "../components/Document";
@@ -28,35 +28,35 @@ import IDS from "../public/IDS";
 
 export default function Home({dark, setDark}) {
     const [onElement, setOnElement] = useState(0)
-    const [locale, lang, setLang] = useLocale()
+    const [,,setLang] = useLocale()
 
     useEffect(() => {
         setDark(localStorage.getItem('dark') === '1' || !localStorage.getItem("dark"))
         setLang(localStorage.getItem('locale'))
     }, [])
-
+    useAlert(dark)
     return (
         <>
-            <Navigation path={"/"} onElement={onElement}/>
+            <Navigation path={"/"} onElement={onElement} setOnElement={setOnElement}/>
             <div className={styles.wrapper}>
                 <Head>
                     <title>Gustavo Roque | Full-stack web dev</title>
                 </Head>
 
                 <section className={styles.section} id={IDS.PROFILE}>
-                    <Profile setOn={() => setOnElement(0)}/>
+                    <Profile/>
                 </section>
 
                 <section className={styles.section} id={IDS.ABOUT}>
-                    <About setOn={() => setOnElement(1)}/>
+                    <About/>
                 </section>
 
                 <section className={styles.section} id={IDS.EXPERIENCES}>
-                    <Experience setOn={() => setOnElement(2)}/>
+                    <Experience/>
                 </section>
 
                 <section className={styles.section} id={IDS.PROJECTS}>
-                    <Projects setOn={() => setOnElement(3)}/>
+                    <Projects/>
                 </section>
             </div>
         </>

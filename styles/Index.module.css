@@ -32,6 +32,7 @@
 .image{
     height: 250px;
     border-radius: 5px;
+    overflow: hidden;
 }
 .group{
     width: 100%;

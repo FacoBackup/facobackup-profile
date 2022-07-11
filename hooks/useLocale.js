@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
-import EN from "../templates/EN";
-import PT from "../templates/PT";
+import EN from "../public/EN";
+import PT from "../public/PT";
 
 export default function useLocale(){
     const [locale, setLocale] = useState(EN)

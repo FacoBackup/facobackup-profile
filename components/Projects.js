@@ -83,18 +83,11 @@ const PROJECTS = [
     }
 ]
 export default function Projects({setOn}) {
-    const ref = useRef()
+
     const router = useRouter()
-    useEffect(() => {
-        const obs = new IntersectionObserver((e) => {
-            if (e[0].isIntersecting)
-                setOn()
-        })
-        obs.observe(ref.current)
-        return () => obs.disconnect()
-    }, [])
+
     return (
-        <div className={styles.profile} style={{alignContent: "flex-start"}} ref={ref}>
+        <div className={styles.profile} id={"4"} style={{alignContent: "flex-start"}} data-listen={"-"}>
             <h2>Projetos</h2>
 
             <Masonry quantityPerRow={2} gap={"16px"} styles={{paddingBottom: "10vh"}}>

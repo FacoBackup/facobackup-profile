@@ -2,18 +2,10 @@ import {useEffect, useRef} from "react";
 import IDS from "../public/IDS";
 import styles from "../styles/Index.module.css";
 
-export default function Experience({setOn}) {
-    const ref=useRef()
-    useEffect(() => {
-        const obs = new IntersectionObserver((e) => {
-            if(e[0].isIntersecting)
-                setOn()
-        })
-        obs.observe(ref.current)
-        return () => obs.disconnect()
-    }, [])
+export default function Experience() {
+
     return (
-        <div className={styles.profile} ref={ref} style={{ justifyContent: "unset"}}>
+        <div className={styles.profile} data-listen={"-"} id={"3"} style={{ justifyContent: "unset"}}>
             <h2>Experiência</h2>
             <div className={styles.cellDivider}>
                 Hard skills

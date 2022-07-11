@@ -7,9 +7,30 @@ import useLocale from "../hooks/useLocale";
 import {Theme} from "../pages/_app";
 import IDS from "../public/IDS";
 
-export default function Navigation({path, onElement}) {
+export default function Navigation({path, onElement, setOnElement}) {
     const [locale, lang, setLang] = useLocale()
     const {dark, setDark} = useContext(Theme)
+
+    useEffect(() => {
+        if(path === "/") {
+            const targets = document.querySelectorAll(`[data-listen="-"]`)
+
+            const obs = new IntersectionObserver((e) => {
+                let intersecting = []
+                e.forEach((v,i) => {
+                    if(v.isIntersecting)
+                        intersecting.push(v.target.id)
+                })
+                if(intersecting.length > 0)
+                    setOnElement(Math.min(...intersecting) - 1)
+            }, {rootMargin: "-50%"})
+            targets.forEach(t => {
+                obs.observe(t)
+            })
+
+            return () => obs.disconnect()
+        }
+    }, [path])
 
     return (
         <nav className={styles.header}>
@@ -94,17 +115,6 @@ export default function Navigation({path, onElement}) {
                         </ToolTip>
                     </Button>
 
-                    <Button
-                        className={styles.button}
-                        variant={onElement === 4 ? "filled" : undefined}
-                    >
-                        <Icon styles={{fontSize: "1.1rem"}}>
-                            call
-                        </Icon>
-                        <ToolTip>
-                            {locale.CONTACT}
-                        </ToolTip>
-                    </Button>
                     <div className={styles.divider}/>
                 </>
             ) : null}
@@ -147,5 +157,6 @@ export default function Navigation({path, onElement}) {
 }
 Navigation.propTypes = {
     path: PropTypes.string,
-    onElement: PropTypes.number
+    onElement: PropTypes.number,
+    setOnElement: PropTypes.func
 }

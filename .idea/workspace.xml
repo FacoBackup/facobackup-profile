@@ -6,7 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="68824e3f-e620-4ee5-bd9b-8c59ed04fe44" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hooks/useLocale.js" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/useLocale.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/IDS.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/IDS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/LOGO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/RabbitMQ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/electron.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/opengl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ps2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/py.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/react.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/rs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wasm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Index.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/EN.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/EN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/PT.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/PT.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,22 +54,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/roque/Documents/GitHub/facobackup-profile&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/var/lib/snapd/snap/webstorm/266/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/roque/Documents/GitHub/facobackup-profile/components",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "/var/lib/snapd/snap/webstorm/266/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/components" />
@@ -63,6 +79,7 @@
       <recent name="C:\Users\gustavo.roque\Documents\GitHub\pj-engine-demo\md" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="C:\Users\gustavo.roque\Documents\GitHub\pj-engine-demo\public" />
       <recent name="C:\Users\gustavo.roque\Documents\GitHub\pj-engine-demo\md\src" />
     </key>
@@ -86,7 +103,8 @@
       <workItem from="1657042042390" duration="40000" />
       <workItem from="1657235124792" duration="9868000" />
       <workItem from="1657477389943" duration="114000" />
-      <workItem from="1657477511010" duration="6009000" />
+      <workItem from="1657477511010" duration="6628000" />
+      <workItem from="1657536645154" duration="2839000" />
     </task>
     <servers />
   </component>
