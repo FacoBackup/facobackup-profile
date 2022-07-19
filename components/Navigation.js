@@ -81,23 +81,7 @@ export default function Navigation({path, onElement, setOnElement}) {
                             {locale.ABOUT}
                         </ToolTip>
                     </Button>
-
-                    <Button
-                        onClick={() => {
-                            const el = document.getElementById(IDS.EXPERIENCES)
-                            el.parentNode.parentNode.scrollTop = el.offsetTop - window.innerHeight * .1
-                        }}
-                        className={styles.button}
-                        variant={onElement === 2 ? "filled" : undefined}
-                    >
-                        <Icon styles={{fontSize: "1.1rem"}}>
-                            school
-                        </Icon>
-                        <ToolTip>
-                            {locale.EXPERIENCES}
-                        </ToolTip>
-                    </Button>
-
+                    
                     <Button
                         onClick={() => {
                             const el = document.getElementById(IDS.PROJECTS)

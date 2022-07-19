@@ -20,8 +20,7 @@ import PropTypes from "prop-types";
 import useLocale from "../hooks/useLocale";
 import Document from "../components/Document";
 import Navigation from "../components/Navigation";
-import About from "../components/About";
-import Experience from "../components/Experience";
+import About from "../components/About"; 
 import Projects from "../components/Projects";
 import Profile from "../components/Profile";
 import IDS from "../public/IDS";
@@ -50,10 +49,7 @@ export default function Home({dark, setDark}) {
                 <section className={styles.section} id={IDS.ABOUT}>
                     <About/>
                 </section>
-
-                <section className={styles.section} id={IDS.EXPERIENCES}>
-                    <Experience/>
-                </section>
+ 
 
                 <section className={styles.section} id={IDS.PROJECTS}>
                     <Projects/>
